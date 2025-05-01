@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(229, 136, 102);
+}
+h1{
+    text-align: center;
+    color: white;
+    margin: 20px;
+}
+#conteiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    background-color: white;
+    margin: auto;
+    width: 500px;
+    border-radius: 8px;
+    padding: 10px;
+}
+p{
+    margin: 15px;
+}
+#txtano{
+    height: 20px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.571);
+    padding: 20px;
+    font-size: 1.1em;
+}
+label{
+    margin-right: 20px;
+}
+#veri{
+    height: 30px;
+    width: 120px;
+    background-color: rgb(177, 104, 78);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+
+}
+
+#veri:hover{
+    background-color: rgb(146, 86, 64);
+    cursor: pointer;
+}
+@media screen and (max-width: 768px){
+    #conteiner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+        background-color: white;
+        margin: auto;
+        width: 300px;
+        
+    }
+    #radi > p{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+
+        grid-template-areas: 
+        
+        "sex sex"
+        "radiof radiom"
+        "ma fe"
+        ;
+
+    
+    }
+    #masc{
+        grid-area: radiom;
+        margin-top: 10px;
+    }
+    #femi{
+        grid-area: radiof;
+        margin-top: 10px;
+    }
+    #sexos{
+        grid-area: sex;
+    }
+    #femii{
+        grid-area: fe;
+        margin-top: 10px;
+    }
+    #mascc{
+        grid-area: ma;
+        margin-top: 10px;
+    }
+}
